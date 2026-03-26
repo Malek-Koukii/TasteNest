@@ -1,0 +1,20 @@
+@mixin h2-responsive {
+  font-size: 32px; // mobile
+  font-weight: 400;
+  color: #000;
+
+  @media #{$minSmall} {
+    font-size: 44px; // tablette
+  }
+
+  @media #{$minLarge} {
+    font-size: 58px; // desktop
+  }
+}
+
+@mixin paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555555;
+  line-height: 26.67px;
+}

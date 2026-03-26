@@ -1,0 +1,11 @@
+/*$primary: #2ecc71;
+$border-radius: 12px;*/
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "helpers/variables";
+@import "components/bouttons";
+@import "components/headings";
+@import "helpers/mixins";
+@import "pages/globalpage";
+@import "pages/homepage";

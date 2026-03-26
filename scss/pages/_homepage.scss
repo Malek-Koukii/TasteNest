@@ -1,0 +1,931 @@
+/* ----- # Start Header ----- # */
+nav.navbar {
+  font-family: "Epilogue", sans-serif;
+  padding: 7px 0;
+  box-shadow: 0px 0px 62px 0px rgba(0, 22, 89, 0.17);
+  .navbar-brand {
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  .nav-item {
+    a.nav-link {
+      font-size: 18px;
+      font-weight: 700;
+      color: #212121;
+      &:hover {
+        color: $main-text-color;
+      }
+      &.active {
+        color: $main-text-color;
+      }
+    }
+  }
+  .basket {
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  .btn-contact {
+    background: #ffc222 !important;
+    font-size: 17px;
+    font-weight: 600;
+    color: #ffffff !important;
+    border-radius: 7px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    border: none;
+    font-family: "Epilogue", sans-serif;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+/* ----- # Start Slider ----- # */
+.slider {
+  background-image: url(../../imgs/bg-slider.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 610px;
+  position: relative;
+  .bloc-content {
+    @media #{$maxSmall} {
+      text-align: center;
+    }
+    @media #{$minLarge} {
+      max-width: 615px;
+    }
+    h1 {
+      font-size: 35px;
+      font-weight: 600;
+      @media #{$minSmall} {
+        font-size: 50px;
+      }
+      @media #{$minLarge} {
+        font-size: 60px;
+      }
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 25px;
+      margin-bottom: 50px;
+      @media #{$minSmall} {
+        font-size: 16px;
+      }
+      @media #{$minLarge} {
+        font-size: 20px;
+      }
+    }
+  }
+  .bloc-pizza {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid $main-background-btn;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 400px;
+    margin: auto;
+    gap: 55px;
+    @media #{$minLarge} {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 44px;
+      margin-right: 25px;
+      padding: 21px 28px;
+      gap: 55px;
+    }
+    @media #{$minMedium} {
+      gap: 2px;
+    }
+    &:before {
+      @media #{$minLarge} {
+        content: "Weekly Special";
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        transform: translateX(20%);
+        background: $main-text-color;
+        color: #fff;
+        padding: 3px 12px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: "Epilogue", sans-serif;
+      }
+    }
+    .price {
+      font-size: 20px;
+      font-weight: 400;
+      @media #{$minLarge} {
+        font-size: 28px;
+      }
+      span {
+        color: $main-text-color;
+      }
+    }
+    .text {
+      font-size: 16px;
+      font-weight: 400;
+      @media #{$minLarge} {
+        font-size: 22px;
+      }
+    }
+    .stars {
+      display: flex;
+      gap: 5px;
+    }
+  }
+}
+
+/* ----- # Start Bloc01 ----- # */
+.bloc01 {
+  .container {
+    padding-top: 115px;
+    padding-bottom: 80px;
+    @media #{$maxSmall} {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      text-align: center;
+    }
+    img.img-fluid {
+      @media #{$maxSmall} {
+        max-width: 240px;
+      }
+    }
+
+    .bloc-content {
+      text-align: center;
+      @media #{$maxSmall} {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      span {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        color: $main-text-color;
+        text-transform: uppercase;
+      }
+      h2 {
+        @include h2-responsive;
+      }
+      p {
+        @include paragraph;
+        margin-bottom: 40px;
+      }
+      .date {
+        font-size: 16px;
+        font-weight: 500;
+        color: #555555;
+        line-height: 26.67px;
+        margin-bottom: 5px;
+      }
+      .tel {
+        font-size: 24px;
+        font-weight: 400;
+        color: #000000;
+        text-decoration: underline;
+      }
+    }
+    .imgs-content {
+      text-align: center;
+      img.first-content {
+        margin-bottom: 70px;
+      }
+      .circle-badge {
+        position: relative;
+        width: 219px;
+        height: 193px;
+        margin: auto;
+        &:before {
+          content: "";
+          position: absolute;
+          inset: 2px;
+          background-image: url(../../imgs/circle-text.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          z-index: 2;
+          top: -25px;
+        }
+      }
+    }
+  }
+}
+
+/* ----- # Start Bloc02 ----- # */
+.bloc02 {
+  .container {
+    text-align: center;
+    @media #{$minMedium} {
+      text-align: left;
+    }
+    h2 {
+      @include h2-responsive;
+    }
+    .img-food {
+      position: relative;
+      display: inline-block;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 28px;
+        width: 100px;
+        height: 100px;
+        left: 0;
+        background-image: url(../../imgs/Background.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        @media #{$minLarge} {
+          left: -19px;
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+    .blocContent {
+      @media #{$maxSmall} {
+        max-width: 298px;
+        margin: auto;
+      }
+      .text-content {
+        display: flex;
+        gap: 10px;
+        span {
+          font-size: 18px;
+          font-weight: 400;
+          color: #555555;
+          line-height: 35px;
+        }
+      }
+    }
+    .btn-wrapper {
+      margin-top: 40px;
+    }
+  }
+}
+
+/* ----- # Start Bloc Highly Trusted ----- # */
+.highlyTrusted {
+  .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    @media #{$minLarge} {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: 400;
+      color: #000000;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      @media #{$minLarge} {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+/* ----- # Start Bloc Tabs ----- # */
+.blocTabs {
+  .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @media #{$minLarge} {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    ul {
+      &#myTab {
+        border: none;
+        max-width: 625px;
+        margin: auto;
+        gap: 25px;
+        margin-bottom: 20px;
+      }
+      &.nav-tabs {
+        .nav-link {
+          border: 5px solid #e4e4e4;
+          border-radius: 20px;
+          padding: 31px 55px;
+          &.active {
+            border-color: $main-text-color;
+            border: 5px solid $main-text-color;
+            border-radius: 20px;
+            padding: 31px 55px;
+          }
+          &:focus {
+            border-color: $main-text-color;
+            border: 5px solid $main-text-color;
+            border-radius: 20px;
+          }
+          &:hover {
+            border-color: $main-text-color;
+            border: 5px solid $main-text-color;
+            border-radius: 20px;
+            padding: 31px 55px;
+          }
+        }
+        .nav-item {
+          p {
+            font-size: 22px;
+            font-weight: 400;
+            color: #000000;
+            font-family: "Fredoka One", sans-serif;
+            margin-top: 15px;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .bbq-wrapper {
+      img {
+        border-radius: 50%;
+      }
+    }
+    .bloc-bbq {
+      position: relative;
+      @media #{$maxSmall} {
+        background: #f5f8fd;
+        border-radius: 30px;
+        padding: 40px 50px;
+      }
+      &:before {
+        @media #{$minMedium} {
+          content: "";
+          position: absolute;
+          top: -33%;
+          right: -11%;
+          width: 615px;
+          height: 480px;
+          background: #f5f8fd;
+          z-index: -1;
+          border-radius: 30px;
+        }
+        @media #{$minLarge} {
+          top: -35%;
+          right: -11%;
+          width: 893px;
+          height: 560px;
+        }
+      }
+      h3 {
+        font-size: 30px;
+        font-weight: 400;
+        color: #000000;
+        @media #{$minLarge} {
+          font-size: 40px;
+        }
+      }
+      .menu-item {
+        h6 {
+          font-size: 18px;
+          font-weight: 400;
+          color: #000000;
+          @media #{$minLarge} {
+            font-size: 22px;
+          }
+        }
+        .price {
+          font-size: 18px;
+          font-weight: 400;
+          color: #f3274c;
+          @media #{$minLarge} {
+            font-size: 22px;
+          }
+        }
+        p {
+          font-size: 12px;
+          font-weight: 400;
+          color: #555555;
+          @media #{$minLarge} {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ----- # Start Highlighting ----- # */
+.highlighting {
+  background-image: url(../../imgs/highlighting.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  .container {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    @media #{$maxSmall} {
+      text-align: center;
+    }
+    span {
+      font-size: 18px;
+      font-weight: 400;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+    h2 {
+      @include h2-responsive;
+      color: #ffffff;
+    }
+    .experience {
+      background: #ffd40d;
+      max-width: 225px;
+      padding: 24px 35px;
+      border-radius: 30px;
+      margin-top: 37px;
+      @media #{$maxSmall} {
+        margin: 25px auto 25px auto;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        color: #000000;
+        font-family: "Fredoka One", sans-serif;
+        margin-bottom: 6px;
+        line-height: 25px;
+        @media #{$minLarge} {
+          font-size: 24px;
+          line-height: 33.6px;
+        }
+      }
+    }
+  }
+}
+
+/* ----- # Start News ----- # */
+.news {
+  .container {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    @media #{$minLarge} {
+      padding-top: 100px;
+      padding-bottom: 80px;
+    }
+    h2 {
+      @include h2-responsive;
+      margin-bottom: 50px;
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -15px;
+        transform: translateX(-50%);
+        width: 170px;
+        height: 7px;
+        background-color: #ffd40d;
+        border-radius: 30px;
+        @media #{$minLarge} {
+          width: 270px;
+          height: 10px;
+        }
+      }
+    }
+    .row {
+      .card {
+        border: none;
+        .date {
+          font-size: 13px;
+          font-weight: 400;
+          color: #000000;
+          background: #ffd40d;
+          padding: 2px 10px;
+          border-radius: 7px;
+          max-width: 112px;
+          text-align: center;
+          @media #{$minLarge} {
+            font-size: 15px;
+          }
+        }
+        .card-title {
+          font-size: 20px;
+          font-weight: 400;
+          color: #000000;
+          margin-top: 14px;
+          margin-bottom: 14px;
+          @media #{$minLarge} {
+            font-size: 26px;
+          }
+        }
+        .card-text {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          p {
+            font-size: 14px;
+            font-weight: 400;
+            color: #000000;
+            margin-bottom: 0;
+            font-family: "Fredoka One", sans-serif;
+            @media #{$minLarge} {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ----- # Start Restaurant App ----- # */
+.restaurantApp {
+  background-image: url(../../imgs/bg-bloc.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .row {
+      span {
+        &.title {
+          font-size: 12px;
+          font-weight: 400;
+          color: $main-text-color;
+          text-transform: uppercase;
+          color: $main-text-color;
+          @media #{$minMedium} {
+            font-size: 15px;
+          }
+          @media #{$minLarge} {
+            font-size: 18px;
+          }
+        }
+      }
+      h2 {
+        font-size: 20px;
+        font-weight: 400;
+        color: #000000;
+        @media #{$minMedium} {
+          font-size: 30px;
+        }
+        @media #{$minLarge} {
+          font-size: 50px;
+        }
+      }
+      .circle-content {
+        margin-top: 25px;
+        margin-bottom: 40px;
+        .text-circle {
+          display: flex;
+          gap: 12px;
+          p {
+            margin-bottom: 0;
+            font-family: "Fredoka One", sans-serif;
+            line-height: 30px;
+            font-size: 14px;
+            @media #{$minLarge} {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ----- # Start Reservation ----- # */
+.reservation {
+  .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @media #{$minLarge} {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    .box-title {
+      max-width: 761px;
+      margin-bottom: 30px;
+      .title {
+        font-size: 12px;
+        font-weight: 400;
+        color: $main-text-color;
+        text-transform: uppercase;
+        color: $main-text-color;
+        @media #{$minMedium} {
+          font-size: 15px;
+        }
+        @media #{$minLarge} {
+          font-size: 18px;
+        }
+      }
+      h2 {
+        @include h2-responsive;
+      }
+    }
+    .row {
+      .info-item {
+        .icon-box {
+          width: 65px;
+          height: 65px;
+          background-color: #ffd40d;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 15px;
+          font-size: 25px;
+          color: #000000;
+        }
+        small {
+          font-size: 16px;
+          font-weight: 400;
+          color: $main-text-color;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          color: #555555;
+          line-height: 21.6px;
+          font-family: "Fredoka One", sans-serif;
+          margin-bottom: 0;
+        }
+      }
+      .reservation-form {
+        .form-control {
+          height: 60px;
+          border-radius: 7px;
+          border: 3px solid #e4e4e4;
+          padding-left: 25px;
+          &:focus {
+            border-color: transparent;
+            border: 3px solid $main-text-color;
+            box-shadow: none;
+          }
+          &:hover {
+            border: 3px solid $main-text-color;
+          }
+        }
+        .btn-wrapper {
+          margin-top: 29px;
+        }
+      }
+    }
+  }
+}
+
+/* ----- # Start Footer ----- # */
+.footer {
+  background: #f5f8fd;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  position: relative;
+  z-index: 1;
+  @media #{$minLarge} {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  &:before {
+    @media #{$minSmall} {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 290px;
+      height: 517px;
+      background-image: url(../../imgs/footer-left.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+  &:after {
+    @media #{$minSmall} {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 274px;
+      height: 440px;
+      background-image: url(../../imgs/footer-right.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+  .container {
+    .footer-card {
+      background: $main-text-color;
+      max-width: 390px;
+      border-radius: 30px;
+      padding: 32px 40px;
+      color: #ffffff;
+      margin: auto;
+      @media #{$minSmall} {
+        margin: inherit;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Fredoka One", sans-serif;
+        &.date {
+          margin-top: 60px;
+          margin-bottom: 14px;
+        }
+        &.sunday {
+          margin-bottom: 95px;
+          text-decoration: underline;
+        }
+      }
+    }
+    h5 {
+      &.subtitle {
+        font-size: 20px;
+        font-weight: 400;
+        color: #000000;
+        margin-bottom: 15px;
+        position: relative;
+        @media #{$minSmall} {
+          margin-bottom: 46px;
+        }
+        @media #{$minMedium} {
+          font-size: 26px;
+        }
+        &.about {
+          &:before {
+            @media #{$minSmall} {
+              content: "";
+              position: absolute;
+              left: 4%;
+              bottom: -12px;
+              transform: translateX(-50%);
+              width: 65px;
+              height: 5px;
+              background-color: #ffd40d;
+              border-radius: 30px;
+            }
+            @media #{$minMedium} {
+              bottom: -15px;
+              width: 78px;
+              height: 7px;
+              left: 29%;
+            }
+            @media #{$minLarge} {
+              left: 21%;
+            }
+          }
+        }
+        &.menu {
+          &:before {
+            @media #{$minSmall} {
+              content: "";
+              position: absolute;
+              left: 4%;
+              bottom: -12px;
+              transform: translateX(-50%);
+              width: 55px;
+              height: 5px;
+              background-color: #ffd40d;
+              border-radius: 30px;
+            }
+            @media #{$minMedium} {
+              bottom: -15px;
+              width: 78px;
+              height: 7px;
+              left: 26%;
+            }
+            @media #{$minLarge} {
+              left: 19%;
+            }
+          }
+        }
+        &.newsletter {
+          &:before {
+            @media #{$minSmall} {
+              content: "";
+              position: absolute;
+              left: 8%;
+              bottom: -12px;
+              transform: translateX(-50%);
+              width: 110px;
+              height: 5px;
+              background-color: #ffd40d;
+              border-radius: 30px;
+            }
+            @media #{$minMedium} {
+              bottom: -15px;
+              width: 136px;
+              height: 7px;
+              left: 23%;
+            }
+            @media #{$minLarge} {
+              left: 17%;
+            }
+          }
+        }
+      }
+    }
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        a {
+          font-size: 16px;
+          font-weight: 400;
+          color: #000000;
+          line-height: 34.67px;
+          font-family: "Epilogue", sans-serif;
+          &:hover {
+            color: $main-text-color;
+          }
+        }
+      }
+    }
+    .news-update {
+      font-size: 16px;
+      font-weight: 400;
+      color: #000000;
+      font-family: "Epilogue", sans-serif;
+    }
+    .newsletter {
+      input {
+        padding: 18px 36px;
+        border: 1px solid #dedede;
+        border-radius: 10px;
+        width: 100%;
+        margin-bottom: 36px;
+        margin-top: 15px;
+        box-shadow: none;
+        &:hover {
+          border: 1px solid $main-text-color;
+        }
+        &::placeholder {
+          font-size: 16px;
+          font-weight: 400;
+          color: #c6c6c6;
+          font-family: "Epilogue", sans-serif;
+        }
+      }
+    }
+    hr {
+      border: 3px solid #ffd40d;
+      margin-top: 50px;
+      @media #{$minSmall} {
+        margin-top: 100px;
+      }
+    }
+    .footer-bottom {
+      margin-top: 40px;
+      @media #{$minMedium} {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #000000;
+        font-family: "Fredoka One", sans-serif;
+        span {
+          color: $main-text-color;
+          font-style: italic;
+        }
+      }
+      .social {
+        display: flex;
+        gap: 15px;
+        @media #{$minSmall} {
+          margin-top: 15px;
+        }
+        a {
+          font-size: 16px;
+          font-weight: 400;
+          color: #000000;
+          &:hover {
+            color: $main-text-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+
+
+
+.footer-bottom 
+
+.footer-bottom .social a:hover {
+  color: #e63946;
+}
+
+hr {
+  margin: 30px 0;
+}*/

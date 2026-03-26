@@ -418,7 +418,7 @@ nav.navbar {
 
 /* ----- # Start Highlighting ----- # */
 .highlighting {
-  background-image: url(../../imgs/highlighting.jpg);
+  background-image: url(../imgs/highlighting.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -542,7 +542,7 @@ nav.navbar {
 
 /* ----- # Start Restaurant App ----- # */
 .restaurantApp {
-  background-image: url(../../imgs/bg-bloc.jpg);
+  background-image: url(../imgs/bg-bloc.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -698,7 +698,7 @@ nav.navbar {
       left: 0;
       width: 290px;
       height: 517px;
-      background-image: url(../../imgs/footer-left.png);
+      background-image: url(../imgs/footer-left.png);
       background-size: contain;
       background-repeat: no-repeat;
       z-index: -1;
@@ -712,7 +712,7 @@ nav.navbar {
       right: 0;
       width: 274px;
       height: 440px;
-      background-image: url(../../imgs/footer-right.png);
+      background-image: url(../imgs/footer-right.png);
       background-size: contain;
       background-repeat: no-repeat;
       z-index: -1;
@@ -915,17 +915,3 @@ nav.navbar {
     }
   }
 }
-
-/*
-
-
-
-.footer-bottom 
-
-.footer-bottom .social a:hover {
-  color: #e63946;
-}
-
-hr {
-  margin: 30px 0;
-}*/
